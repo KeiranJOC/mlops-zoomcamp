@@ -11,4 +11,4 @@ COPY ["starter.py", "./"]
 
 RUN mkdir output
 
-ENTRYPOINT ["python", "starter.py", "2021", "4"]
+ENTRYPOINT ["python", "starter.py"]

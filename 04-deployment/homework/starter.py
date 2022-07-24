@@ -69,7 +69,8 @@ def run():
     parser.add_argument('month', type=int)
     args = parser.parse_args()
 
-    input_file = f'https://nyc-tlc.s3.amazonaws.com/trip+data/fhv_tripdata_{args.year:04d}-{args.month:02d}.parquet'
+    input_file = f"https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_{args.year:04d}-{args.month:02d}.parquet"
+    # input_file = f'https://s3.amazonaws.com/nyc-tlc/trip+data/fhv_tripdata_{args.year:04d}-{args.month:02d}.parquet'
     output_file = f'output/fhv_tripdata_{args.year:04d}-{args.month:02d}.parquet'
 
     apply_model(
